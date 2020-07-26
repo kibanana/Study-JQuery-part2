@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div#d1").text('<strong>Responsive Web</strong>');
+
+                $("div#d2").html('<strong>Responsive Web</strong>');
+            });
+        </script>
+
+        <style>
+            * {
+                margin: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="d1">jQuery</div>
+
+        <div id="d2">HTML</div>
+    </body>
+</html>

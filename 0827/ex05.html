@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div#d1").prepend("<div>prepend</div>");
+                $("div#d1").before("<div>before</div>");
+
+                $("div#d1").append("<div>append</div>");
+                $("div#d1").after("<div>after</div>");
+
+                $("<div>삽입2_1</div>").prependTo("div#d2");
+                $("<div>삽입2_3</div>").prependTo("div#d2");
+                
+                $("<div>삽입2_2</div>").appendTo("div#d2");
+                $("<div>삽입2_4</div>").appendTo("div#d2");
+            });
+        </script>
+
+        <style>
+            * {
+                margin: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="d1"><strong>내용1</strong></div>
+
+        <div id="d2">내용2</div>
+    </body>
+</html>

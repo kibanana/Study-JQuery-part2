@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            let city = ["서울", "대구", "대전", "부산"];
+           let newCity = $.map(city, function(value, index) {
+               if(index < 2) {
+                   console.log(value);
+                   return value;
+               }
+           })
+        });
+        </script>
+    </head>
+    
+    <body>
+    </body>
+</html>

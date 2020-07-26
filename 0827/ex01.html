@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("li:nth-child(1)").css("border", "4px solid red");
+                $("li:nth-child(2)").css("border", "2px solid orange");
+                $("li:nth-child(3)").css("border", "2px solid orange");
+                $("li:nth-child(4)").css("background", "yellow");
+                $("li:nth-child(5)").css("border", "4px solid purple");
+                $("li:nth-child(6)").css("background", "purple");
+
+                $("button").click(function(){
+                    $("li:last-child").css("background", "gray");
+                });
+            });
+        </script>
+
+        <style>
+            * {
+                margin: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul>
+            <li>내용_1</li>
+            <li>내용_2</li>
+            <li>내용_1</li>
+            <li>내용_1</li>
+            <li>내용_2</li>
+            <li>내용_3</li>
+        </ul>
+        <button>Click Me!</button>
+    </body>
+</html>

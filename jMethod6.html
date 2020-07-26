@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+           let city = ["서울", "대구", "대전", "부산"];
+           let firstText = '';
+           let secondText = '';
+           $.each(city, function(index, value) {
+                firstText += index + ' : ' + value + '<br>';
+                console.log(index);
+                console.log(value);
+           });
+
+           let subjectInfo = {
+               subject: "html",
+               grade: 1,
+               days: 20
+           };
+           $.each(subjectInfo, function(key, value) {
+                secondText += key + ' : ' + value + '<br>';
+                console.log(key);
+                console.log(value);
+           });
+
+           $("div#d1").html(firstText);
+           $("div#d2").html(secondText);
+        });
+        </script>
+    </head>
+    
+    <body>
+        <div id="d1"></div>
+        <div id="d2"></div>
+    </body>
+</html>

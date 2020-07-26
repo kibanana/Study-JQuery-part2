@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div#d1 img").click(function(){
+                    $(this).width($("div#d1 img").width()+100);
+                    $(this).height($("div#d1 img").height()+100);
+                });
+
+                $("div#d2 img").click(function(){
+                    $(this).width($("div#d2 img").width()*2);
+                    $(this).height($("div#d2 img").height()*2);
+                });
+            });
+        </script>
+
+        <style>
+            * {
+                margin: 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="d1">
+            <img src="./icon_joke.png" width="50px" height="50px">
+        </div>
+
+        <div id="d2">
+            <img src="./Google_logo.PNG" width="50px" height="50px">
+        </div>
+    </body>
+</html>

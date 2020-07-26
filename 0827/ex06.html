@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+           let arr = $.each($("ul li"), function(value, index) {
+               console.log($(this).text() + " : " + value);
+           })
+        });
+        </script>
+    </head>
+    
+    <body>
+        <ul>
+            <li>foo</li>
+            <li>bar</li>
+        </ul>
+    </body>
+</html>

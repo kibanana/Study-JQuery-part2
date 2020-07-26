@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $.each($("div"), function(index, value) {
+                console.log(index + " " + $(this).attr("class"));
+            });
+          console.log($("div").attr("class"));
+        });
+        </script>
+    </head>
+    
+    <body>
+        <div class="m1">내용</div>
+        <div class="m2">내용</div>
+        <div class="m3">내용</div>
+    </body>
+</html>

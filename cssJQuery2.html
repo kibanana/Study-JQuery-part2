@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 라이브러리 연결</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('div:nth-child(1)').css('background', 'yellow');
+
+            $('div:nth-child(2)').css({
+                'color': 'purple',
+            });
+
+            $('div:nth-child(3)').css({
+                'text-align': function() {
+                    return 'center';
+                },
+                'border': function() {
+                    'blue solid 1px'
+                },
+                'color': function() {
+                    'green'
+                }
+            });
+        });
+        </script>
+
+        <style>
+            * {
+                margin: 5px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>JQuery</div>
+        <div>Javascript</div>
+        <div>JQuery mobile</div>
+    </body>
+</html>
